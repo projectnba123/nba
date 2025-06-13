@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
+        <img src="ball.webp" className="App-logo" alt="logo" />
         <h1 className="App-mainTitle">NBA App</h1>
       </header>
       <main className="App-main">

@@ -32,14 +32,16 @@ const [players, setPlayers] = useState([])
         <div className="App-team">
           <h2>TEAM</h2>
           {JSON.stringify(players)}
-          <div className="App-players">
-            <div className="App-player">
+          <div className="App-players">{players.map(player => <div className="App-player">
               <div className="App-player-image">
-                <img src="https://img.sportradar.com/ls/players/getty250x250/607778.png" />
+                <img src={`https://img.sportradar.com/ls/players/getty250x250/${player.sr_id.substring(10)}.png`} />
               </div>
-              <p className="App-player-name">James Harden</p>
-            </div>
-          </div>
+              <p className="App-player-name">{player.full_name} </p>
+            </div>) 
+           }
+
+           
+          </div> 
         </div>
       </main>
     </div>

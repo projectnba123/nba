@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src="ball.webp" className="App-logo" alt="logo" />
-        <h1 className="App-mainTitle">NBA App</h1>
+        <h1 className="App-mainTitle">NBA</h1>
       </header>
       <main className="App-main">
         <select name="team" onChange={handleChange} defaultValue="">

@@ -1,4 +1,4 @@
-export function fetchPlayers(teamId) {
+export default function fetchPlayers(teamId) {
   return fetch(`/api/nba/trial/v8/en/teams/${teamId}/profile.json`, {
     headers: {
       accept: "application/json",
